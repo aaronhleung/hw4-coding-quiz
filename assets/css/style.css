@@ -27,6 +27,9 @@ h1 {
     color: white;
     background-color: rgb(58, 14, 158);
 }
+#startBtn:hover {
+    background-color: darkviolet;
+}
 
 #viewHighScores {
     color:rgb(162, 76, 243);
@@ -36,6 +39,24 @@ h1 {
     border: 0px;
     margin-top: 10px;
 
+}
+#btn1, #btn2, #btn3, #btn4 {
+    display: flex;
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 3px;
+    text-align: center;
+    font-size: 25px;
+    padding: 13px;
+    width: 265px;
+    margin-top: 3px;
+    color: white;
+    background-color: rgb(58, 14, 158);
+    display: none;
+}
+
+#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
+    background-color: darkviolet;
 }
 
 header {
@@ -47,3 +68,13 @@ header {
     margin-bottom: 25px;
     font-size: 20px;
 }
+
+#feedback {
+    font-weight: lighter;
+    display: none;
+}
+
+#questions {
+    display:none;
+}
+
