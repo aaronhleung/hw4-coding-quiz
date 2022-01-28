@@ -1,0 +1,49 @@
+#mainPage {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+h2 {
+    font-weight:normal;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-family:'Times New Roman', Times, serif
+}
+
+#startBtn {
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 3px;
+    text-align: center;
+    font-size: 25px;
+    padding: 13px;
+    width: 165px;
+    margin-top: 3px;
+    color: white;
+    background-color: rgb(58, 14, 158);
+}
+
+#viewHighScores {
+    color:rgb(162, 76, 243);
+    background: none;
+    padding: 0px;
+    font-size: 20px;
+    border: 0px;
+    margin-top: 10px;
+
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
