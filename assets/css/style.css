@@ -1,80 +1,176 @@
-#mainPage {
-    display:flex;
-    flex-direction: column;
+:root {
+    --primary-color: #8064A2;
+    --secondary-color: #ba94e7;
+    --tertiary-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.body {
+    text-align: center;
+}
+
+.h1-text {
+    padding-top: 150px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.score-text {
+    padding-top: 200px;
+    font-weight: bold;
+    font-size: 40px;
+    padding-left: 18%;
+}
+
+p {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn {
+    text-align: center !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--tertiary-color) !important;
+    font-size: 22px !important;
+    padding: 0px 12px 0px 12px !important;
+}
+
+.btn:hover:enabled {
+    text-align: center !important;
+    background-color: var(--secondary-color)  !important;
+    border-color: var(--secondary-color) !important;
+    color: var(--tertiary-color) !important;
+    font-size: 22px !important;
+    padding: 0px 12px 0px 12px !important;
+}
+
+#score {
+    color: var(--primary-color);
+    padding-left: 20px;
+}
+
+#timer {
+    float: right;
+    padding-right: 30px;
+}
+
+.quizChallengePage {
     align-items: center;
     text-align: center;
-    font-family:sans-serif;
 }
 
-h2 {
-    font-weight:normal;
-}
-
-h1 {
-    margin-bottom: 0px;
-    font-family:'Times New Roman', Times, serif
-}
-
-#startBtn {
-    font-family: sans-serif;
-    border-radius: 8px;
-    border: 3px;
-    text-align: center;
+#quizQuestionHeader {
     font-size: 25px;
-    padding: 13px;
-    width: 165px;
-    margin-top: 3px;
-    color: white;
-    background-color: rgb(58, 14, 158);
-}
-#startBtn:hover {
-    background-color: darkviolet;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 15%;
+    padding-bottom: 15px;
 }
 
-#viewHighScores {
-    color:rgb(162, 76, 243);
-    background: none;
-    padding: 0px;
+.li-qs {
+    list-style-type: none;
+    padding-left: 15%;
+}
+
+.questionButton {
+    text-align: center !important;
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--tertiary-color) !important;
+    font-size: 22px !important;
+    padding: 0px 12px 0px 12px !important;
+    margin: 5px;
+}
+
+#answerResponse {
+    font-style: italic;
+    color: grey;
+    font-size: 30px;
+    padding-left: 15%;
+}
+
+.hr-style {
+    margin: 30px 120px;
+}
+
+#finalScoreIs {
+    padding-left: 15% !important;
+    padding: 20px;
     font-size: 20px;
-    border: 0px;
-    margin-top: 10px;
-
-}
-#btn1, #btn2, #btn3, #btn4 {
-    display: flex;
-    font-family: sans-serif;
-    border-radius: 8px;
-    border: 3px;
-    text-align: center;
-    font-size: 25px;
-    padding: 13px;
-    width: 265px;
-    margin-top: 3px;
-    color: white;
-    background-color: rgb(58, 14, 158);
-    display: none;
+    font-weight: bold;
 }
 
-#btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
-    background-color: darkviolet;
+#highScores {
+    text-align: left;
+    font-weight: bolder;
 }
 
-header {
-    display:flex;
-    justify-content: space-between;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 25px;
-    font-size: 20px;
+#highScoreButtons {
+    padding-left: 15%;
 }
 
-#feedback {
-    font-weight: lighter;
-    display: none;
+.row {
+    align-items: center !important;
+    text-align: center !important;
+    padding-left: 10% !important;
 }
 
-#questions {
-    display:none;
+.initials {
+    padding-left: 15% !important;
 }
 
+#allDone {
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-left: 15%;
+}
+
+#highScoreList {
+    background-color: lavender;
+    width: 70%;
+    margin-left: 18%;
+}
+
+#list {
+    list-style-type: none;
+}
+
+@media screen and (max-width: 980px) {
+    .row {
+        align-items: center !important;
+        text-align: center !important;
+        padding-left: 15% !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .row {
+        align-items: center !important;
+        text-align: center !important;
+        padding-left: 14% !important;
+    }
+
+    .initials {
+        padding-left: 16% !important;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .row {
+        align-items: center !important;
+        text-align: center !important;
+        padding-left: 14% !important;
+    }
+
+    .initials {
+        padding-left: 14% !important;
+    }
+}
