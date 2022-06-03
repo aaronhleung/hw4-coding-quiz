@@ -13,3 +13,5 @@ Screenshots of the app in use: ![start page](./assets/images/coding-quiz.png)
 ![enter high score](./assets/images/coding-quiz2.png)
 
 ![high scores](./assets/images/coding-quiz3.png)
+
+View the deployed app [here!](https://aaronhleung.github.io/hw4-coding-quiz/)
